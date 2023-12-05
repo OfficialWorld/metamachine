@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--<link rel="stylesheet" type="text/css" href="Main.css" />-->
 	<link href="Main.css" rel="stylesheet" />
+	<script src = "Main.js"></script>
     <title>Gundam Maker</title>
 </head>
 <body>
@@ -13,12 +15,16 @@
 			<a class = "topBarBlock" href = "https://html-coding.co.jp/annex/dictionary/html/a/">お問い合わせ</a>
 			<a class = "topBarBlock" href = "https://html-coding.co.jp/annex/dictionary/html/a/">ショップ</a>
 			<a class = "topBarBlock" href = "https://html-coding.co.jp/annex/dictionary/html/a/">その他</a>
-			<a class = "topBarBlock" href = "https://html-coding.co.jp/annex/dictionary/html/a/">ログイン・アカウント作成</a>
+			<a class = "topBarBlock" href = "https://html-coding.co.jp/annex/dictionary/html/a/">ログイン</a>
 		</ul>
-	<div style = "right : 0; position : absolute;"><img src = "pic/TitleLogo.png"/></div>
 	<form action="">
         <input type="text" id="input_message" autocomplete="off" /><button type="submit">Send</button>
     </form>
-    <input id="testFile" type="file" name="file">
+	
+	<form action="index.php" method="post">
+		<p>お名前（必須）：<br>
+		<input type="text" name="name"></p>
+		<p><input type="submit" value="確認する"></p>
+	</form>
 </body>
 </html>
